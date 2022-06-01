@@ -69,12 +69,12 @@
      <p> Put form here</p>
             <?php
 
-        if(isset($_post["FirstName"])){//show data
-            echo $_post["FirstName"];
+        if(isset($_POST["FirstName"])){//show data
+            echo $_POST["FirstName"];
         
         }else{//show form
             echo '
-                <form action="/action_page.php">
+                <form action="" method="post">
                     <div class="mb-3 mt-3">
                          <label for="FirstName">FirstName:</label>
                         <input type="text" class="form-control" id="FirstName" placeholder="Enter First Name" name="FirstName">
